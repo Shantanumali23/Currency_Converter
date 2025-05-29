@@ -1,4 +1,3 @@
-// Dummy exchange rates (approximate)
 const exchangeRates = {
   USD: { INR: 83, EUR: 0.92, GBP: 0.79, AUD: 1.50, CAD: 1.37, JPY: 157, CNY: 7.23, CHF: 0.91, SGD: 1.36, ZAR: 18.4, AED: 3.67, BRL: 5.22 },
   INR: { USD: 0.012, EUR: 0.011, GBP: 0.0095, AUD: 0.018, CAD: 0.016, JPY: 1.89, CNY: 0.087, CHF: 0.011, SGD: 0.016, ZAR: 0.22, AED: 0.044, BRL: 0.063 },
