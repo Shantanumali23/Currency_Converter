@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Currency Converter</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Currency Converter UI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h2>Currency Converter</h2>
-    <div class="converter">
-      <input type="number" id="amount" placeholder="Enter amount">
-      
-      <select id="fromCurrency">
-        <option value="USD">USD - US Dollar</option>
-        <option value="INR">INR - Indian Rupee</option>
-        <option value="EUR">EUR - Euro</option>
-        <option value="GBP">GBP - British Pound</option>
-        <option value="AUD">AUD - Australian Dollar</option>
-        <option value="CAD">CAD - Canadian Dollar</option>
-        <option value="JPY">JPY - Japanese Yen</option>
-        <option value="CNY">CNY - Chinese Yuan</option>
-        <option value="CHF">CHF - Swiss Franc</option>
-        <option value="SGD">SGD - Singapore Dollar</option>
-        <option value="ZAR">ZAR - South African Rand</option>
-        <option value="AED">AED - UAE Dirham</option>
-        <option value="BRL">BRL - Brazilian Real</option>
-      </select>
+    <div class="card">
+        <div class="card-header">
+            <span>Currency Converter</span>
+        </div>
 
-      <span>to</span>
+        <div class="card-body">
+            <input type="number" id="amount" placeholder="Enter amount" />
 
-      <select id="toCurrency">
-        <option value="INR">INR - Indian Rupee</option>
-        <option value="USD">USD - US Dollar</option>
-        <option value="EUR">EUR - Euro</option>
-        <option value="GBP">GBP - British Pound</option>
-        <option value="AUD">AUD - Australian Dollar</option>
-        <option value="CAD">CAD - Canadian Dollar</option>
-        <option value="JPY">JPY - Japanese Yen</option>
-        <option value="CNY">CNY - Chinese Yuan</option>
-        <option value="CHF">CHF - Swiss Franc</option>
-        <option value="SGD">SGD - Singapore Dollar</option>
-        <option value="ZAR">ZAR - South African Rand</option>
-        <option value="AED">AED - UAE Dirham</option>
-        <option value="BRL">BRL - Brazilian Real</option>
-      </select>
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+            </select>
 
-      <button onclick="convertCurrency()">Convert</button>
-      <div id="result"></div>
+            <div class="arrow">⇅</div>
+
+            <select id="toCurrency">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+
+        <div class="card-footer">
+            <button onclick="convertCurrency()">Convert</button>
+            <div id="result">--</div>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
